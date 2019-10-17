@@ -7,7 +7,7 @@
 int main(int argc, int** argv)
 {
 	if (argc != 2) {
-		printf("Error: Invalid # of arguments");
+		printf("Error: Invalid # of arguments\n");
 		exit(1);
 	}
 
