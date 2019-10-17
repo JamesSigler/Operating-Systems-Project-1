@@ -1,5 +1,3 @@
-CFLAGS=-std=c99
-
 SRCS = $(wildcard *.c)
 
 PROGS = $(patsubst %.c,%,$(SRCS))
