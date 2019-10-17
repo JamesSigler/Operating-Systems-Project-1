@@ -1,12 +1,10 @@
 #!/bin/bash
-
 temph=`date | cut -c12-13`
 dat=`date +"%A %d in %B of %Y (%r)"`
 
 if [ -f  greetingmsg.txt ]
 then
 	rm greetingmsg.txt
-	
 fi
 
 if [ $temph -lt 12 ]
@@ -31,6 +29,4 @@ fi
 
 echo $msg > greetingmsg.txt
 
-#echo $temph
-#echo $dat
 echo -e "$msg\nThis is $dat"
