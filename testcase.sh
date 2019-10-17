@@ -1,3 +1,4 @@
+#!/bin/bash
 
 if [ -f  project1_2-1 ]
 then
