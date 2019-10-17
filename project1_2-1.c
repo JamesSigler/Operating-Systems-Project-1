@@ -5,11 +5,16 @@
 
 int main(int argc, int** argv)
 {
+	if (argc != 2) {
+		printf("Error: must have 2 arguments");
+		exit(1);
+	}
+	
+	
+	int input = atoi(argv[1]);
 	
 	//calling parent argv number of times
-	parent(argv[1]);
-	
-	
+	parent(input);
 }
 
 //child process
