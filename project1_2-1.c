@@ -6,7 +6,7 @@
 int main(int argc, int** argv)
 {
 	if (argc != 2) {
-		printf("Error: must have 2 arguments");
+		printf("Error: Invalid # of arguments");
 		exit(1);
 	}
 	
@@ -41,7 +41,7 @@ void child(int input)
 	//if fork succeeds print the pid
 	else if(cpid == 0)
 	{
-		printf("\nHello from pid %d", getpid());
+		printf("\nHello from pid %d\n", getpid());
 		exit(0);
 	}
 	

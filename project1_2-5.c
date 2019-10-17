@@ -6,9 +6,15 @@
 
 int main(int argc, int** argv)
 {
+	if (argc != 2) {
+		printf("Error: Invalid # of arguments");
+		exit(1);
+	}
+
+	int input = atoi(argv[1]);
 	
 	//calling parent argv number of times
-	repPID(argv[1]);
+	repPID(input);
 }
 
 //parent process
