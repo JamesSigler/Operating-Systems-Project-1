@@ -11,6 +11,4 @@ echo -e "2 children"
 echo -e "4 Children"
 ./project1_2-5 4
 echo -e "8 Children"
-./project1_2-5 8		
-
-
+./project1_2-5 8

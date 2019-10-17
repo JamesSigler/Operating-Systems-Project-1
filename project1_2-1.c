@@ -5,12 +5,13 @@
 
 int main(int argc, int** argv)
 {
+	//checking arguments size
 	if (argc != 2) {
 		printf("Error: Invalid # of arguments\n");
 		exit(1);
 	}
 	
-	
+	//convertine arguments to int
 	int input = atoi(argv[1]);
 	
 	//calling parent argv number of times
