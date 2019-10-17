@@ -47,9 +47,10 @@ void parent(int input)
 {
 	//parent pid
 	pid_t ppid;
+	int i;
 	
 	//loop for inputed amount of times
-	for(int i = 0; i < input; i++)
+	for(i = 0; i < input; i++)
 	{
 		//forking pid
 		ppid = fork();

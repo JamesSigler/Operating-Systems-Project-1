@@ -13,9 +13,10 @@ int main(int argc, int** argv)
 
 //parent process
 void repPID(int input)
-{
-    
-	for(int i = 0; i < input; i++)
+{	
+
+	int i;
+	for(i = 0; i < input; i++)
 	{
     	//forking pid
         pid_t pid = fork();
