@@ -4,9 +4,11 @@ PROGS = $(patsubst %.c,%,$(SRCS))
 
 all: $(PROGS)
 
-chmod u+x testcase.sh
 %: %.c
 	$(CC) $(CFLAGS)  -o $@ $<
+	
+testcase: testcase.sh
+	chmod u+x testcase.sh
 	
 clean: all test
 	
